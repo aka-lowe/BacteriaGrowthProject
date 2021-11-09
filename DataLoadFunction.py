@@ -23,5 +23,7 @@ def dataLoad(filename):
             print('Error in row',t,'Bacteria')
         if datarowisvalid:
 #takes every row where the datarowisvalid=true and stacks it in a matrix
-            data=np.vstack((data,row))           
-    return data[1:,:]
+            data=np.vstack((data,row))   
+    data = data[1:,:]
+    return data
+print(dataLoad("testforreals.txt"))
