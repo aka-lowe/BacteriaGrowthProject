@@ -1,9 +1,4 @@
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-
-
+#function to compute different statistics
 def dataStatistics(data, statistic):
     if statistic == 'Mean Temperature':
     #takes the mean of the 0th column     
