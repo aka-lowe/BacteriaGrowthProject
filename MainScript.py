@@ -97,14 +97,23 @@ while loop:
         print("Filter Data has been selected")
         if data==0:
             print('Error please load data first!')
+        else:
+            filename=input('Please enter the name of the file you wish to use: ')
+            data=dataLoad(filename)  
     elif selection==3:
         print("Display Statistics has been selected")
-        filename=input('Please enter the name of the file you wish to use: ')
-        data=dataLoad(filename)  
+        if data==0:
+           print('Error please load data first!')
+        else:
+            filename=input('Please enter the name of the file you wish to use: ')
+            data=dataLoad(filename)  
     elif selection==4:
         print("General Plots has been selected")
-        filename=input('Please enter the name of the file you wish to use: ')
-        data=dataLoad(filename)  
+        if data==0:
+           print('Error please load data first!')
+        else:
+            filename=input('Please enter the name of the file you wish to use: ')
+            data=dataLoad(filename)  
     elif selection==5:
         print("Quit has been selected")
         loop=False 
